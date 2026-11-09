@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "version": "alpha-1",
+  "version": "alpha-1.1",
   "cards": [
     {
       "id": "heavy-metal",
       "name": "HEAVY METAL",
       "effects": [
         {
-          "text": "\u002B55% bullet damage",
+          "text": "+55% bullet damage",
           "kind": "bonus"
         }
       ],
@@ -25,7 +25,7 @@
       "name": "DEEP POCKETS",
       "effects": [
         {
-          "text": "\u002B3 rounds per magazine",
+          "text": "+3 rounds per magazine",
           "kind": "bonus"
         }
       ],
@@ -61,7 +61,7 @@
       "name": "HIGH GROUND",
       "effects": [
         {
-          "text": "\u002B22% jump power",
+          "text": "+22% jump power",
           "kind": "bonus"
         }
       ],
@@ -79,7 +79,7 @@
       "name": "FORTIFIED",
       "effects": [
         {
-          "text": "\u002B50% maximum health",
+          "text": "+50% maximum health",
           "kind": "bonus"
         }
       ],
@@ -97,7 +97,7 @@
       "name": "HOT TRIGGER",
       "effects": [
         {
-          "text": "\u002B45% fire rate",
+          "text": "+45% fire rate",
           "kind": "bonus"
         }
       ],
@@ -115,7 +115,7 @@
       "name": "RUBBER ROUNDS",
       "effects": [
         {
-          "text": "\u002B2 projectile bounces",
+          "text": "+2 projectile bounces",
           "kind": "bonus"
         }
       ],
@@ -158,7 +158,7 @@
       "name": "RAILSHOT",
       "effects": [
         {
-          "text": "\u002B50% bullet speed",
+          "text": "+50% bullet speed",
           "kind": "bonus"
         }
       ],
@@ -176,7 +176,7 @@
       "name": "FLEET FOOT",
       "effects": [
         {
-          "text": "\u002B20% movement speed",
+          "text": "+20% movement speed",
           "kind": "bonus"
         }
       ],
@@ -194,11 +194,11 @@
       "name": "BUCKSHOT",
       "effects": [
         {
-          "text": "\u002B6 tiny pellets",
+          "text": "+6 tiny pellets",
           "kind": "new"
         },
         {
-          "text": "\u002B20% total damage",
+          "text": "+20% total damage",
           "kind": "bonus"
         }
       ],
@@ -231,7 +231,7 @@
       "name": "HUGE",
       "effects": [
         {
-          "text": "\u002B80% HP",
+          "text": "+80% HP",
           "kind": "bonus"
         },
         {
@@ -266,7 +266,7 @@
           "kind": "drawback"
         },
         {
-          "text": "\u002B0.25s reload",
+          "text": "+0.25s reload",
           "kind": "drawback"
         }
       ],
@@ -303,7 +303,7 @@
           "kind": "new"
         },
         {
-          "text": "\u002B0.25s reload",
+          "text": "+0.25s reload",
           "kind": "drawback"
         }
       ],
