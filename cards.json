@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "version": "alpha-1",
+  "cards": [
+    {
+      "id": "heavy-metal",
+      "name": "HEAVY METAL",
+      "effects": [
+        {
+          "text": "\u002B55% bullet damage",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 1.55
+        }
+      ],
+      "icon": "Damage"
+    },
+    {
+      "id": "deep-pockets",
+      "name": "DEEP POCKETS",
+      "effects": [
+        {
+          "text": "\u002B3 rounds per magazine",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": 3
+        }
+      ],
+      "icon": "Ammo"
+    },
+    {
+      "id": "quick-change",
+      "name": "QUICK CHANGE",
+      "effects": [
+        {
+          "text": "35% faster reload",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ReloadTime",
+          "operation": "Multiply",
+          "value": 0.65
+        }
+      ],
+      "icon": "ReloadTime"
+    },
+    {
+      "id": "high-ground",
+      "name": "HIGH GROUND",
+      "effects": [
+        {
+          "text": "\u002B22% jump power",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "JumpImpulse",
+          "operation": "Multiply",
+          "value": 1.22
+        }
+      ],
+      "icon": "JumpImpulse"
+    },
+    {
+      "id": "fortified",
+      "name": "FORTIFIED",
+      "effects": [
+        {
+          "text": "\u002B50% maximum health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.5
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "hot-trigger",
+      "name": "HOT TRIGGER",
+      "effects": [
+        {
+          "text": "\u002B45% fire rate",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 1.45
+        }
+      ],
+      "icon": "FireRate"
+    },
+    {
+      "id": "rubber-rounds",
+      "name": "RUBBER ROUNDS",
+      "effects": [
+        {
+          "text": "\u002B2 projectile bounces",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletBounces",
+          "operation": "Add",
+          "value": 2
+        }
+      ],
+      "icon": "BulletBounces"
+    },
+    {
+      "id": "quick-guard",
+      "name": "QUICK GUARD",
+      "effects": [
+        {
+          "text": "30% shorter block cooldown",
+          "kind": "bonus"
+        },
+        {
+          "text": "Cannot reduce cooldown below 1s",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BlockCooldown",
+          "operation": "Multiply",
+          "value": 0.7
+        }
+      ],
+      "icon": "BlockCooldown",
+      "minimums": {
+        "BlockCooldown": 1
+      }
+    },
+    {
+      "id": "railshot",
+      "name": "RAILSHOT",
+      "effects": [
+        {
+          "text": "\u002B50% bullet speed",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 1.5
+        }
+      ],
+      "icon": "BulletSpeed"
+    },
+    {
+      "id": "fleet-foot",
+      "name": "FLEET FOOT",
+      "effects": [
+        {
+          "text": "\u002B20% movement speed",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MoveSpeed",
+          "operation": "Multiply",
+          "value": 1.2
+        }
+      ],
+      "icon": "MoveSpeed"
+    },
+    {
+      "id": "buckshot",
+      "name": "BUCKSHOT",
+      "effects": [
+        {
+          "text": "\u002B6 tiny pellets",
+          "kind": "new"
+        },
+        {
+          "text": "\u002B20% total damage",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ProjectileCount",
+          "operation": "Add",
+          "value": 6
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 1.2
+        },
+        {
+          "stat": "Spread",
+          "operation": "Override",
+          "value": 0.35
+        },
+        {
+          "stat": "BuckshotStacks",
+          "operation": "Add",
+          "value": 1
+        }
+      ],
+      "icon": "ProjectileCount"
+    },
+    {
+      "id": "huge",
+      "name": "HUGE",
+      "effects": [
+        {
+          "text": "\u002B80% HP",
+          "kind": "bonus"
+        },
+        {
+          "text": "Larger body",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.8
+        },
+        {
+          "stat": "BodySize",
+          "operation": "Multiply",
+          "value": 1.25
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "remote",
+      "name": "REMOTE",
+      "effects": [
+        {
+          "text": "Mouse steering, no gravity",
+          "kind": "new"
+        },
+        {
+          "text": "-40% speed, -50% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "\u002B0.25s reload",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "RemoteControl",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.5
+        }
+      ],
+      "icon": "RemoteControl"
+    },
+    {
+      "id": "drill-ammo",
+      "name": "DRILL AMMO",
+      "effects": [
+        {
+          "text": "7m wall drilling",
+          "kind": "new"
+        },
+        {
+          "text": "\u002B0.25s reload",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "DrillDistance",
+          "operation": "Add",
+          "value": 7
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "DrillDistance"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "iron-will",
+  "name": "IRON WILL",
+  "effects": [
+    {
+      "text": "+25% maximum HP",
+      "kind": "bonus"
+    }
+  ],
+  "modifiers": [
+    {
+      "stat": "MaxHealth",
+      "operation": "Multiply",
+      "value": 1.25
+    }
+  ]
+}
