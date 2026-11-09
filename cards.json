@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "alpha-1.2",
+  "version": "alpha-bugtest-1",
   "cards": [
     {
       "id": "heavy-metal",
@@ -18,7 +18,8 @@
           "value": 1.55
         }
       ],
-      "icon": "Damage"
+      "icon": "Damage",
+      "setId": "alpha"
     },
     {
       "id": "deep-pockets",
@@ -36,7 +37,8 @@
           "value": 3
         }
       ],
-      "icon": "Ammo"
+      "icon": "Ammo",
+      "setId": "alpha"
     },
     {
       "id": "quick-change",
@@ -54,7 +56,8 @@
           "value": 0.65
         }
       ],
-      "icon": "ReloadTime"
+      "icon": "ReloadTime",
+      "setId": "alpha"
     },
     {
       "id": "high-ground",
@@ -72,7 +75,8 @@
           "value": 1.22
         }
       ],
-      "icon": "JumpImpulse"
+      "icon": "JumpImpulse",
+      "setId": "alpha"
     },
     {
       "id": "fortified",
@@ -90,7 +94,8 @@
           "value": 1.5
         }
       ],
-      "icon": "MaxHealth"
+      "icon": "MaxHealth",
+      "setId": "alpha"
     },
     {
       "id": "hot-trigger",
@@ -108,7 +113,8 @@
           "value": 1.45
         }
       ],
-      "icon": "FireRate"
+      "icon": "FireRate",
+      "setId": "alpha"
     },
     {
       "id": "rubber-rounds",
@@ -126,7 +132,8 @@
           "value": 2
         }
       ],
-      "icon": "BulletBounces"
+      "icon": "BulletBounces",
+      "setId": "alpha"
     },
     {
       "id": "quick-guard",
@@ -151,7 +158,8 @@
       "icon": "BlockCooldown",
       "minimums": {
         "BlockCooldown": 1
-      }
+      },
+      "setId": "alpha"
     },
     {
       "id": "railshot",
@@ -169,7 +177,8 @@
           "value": 1.5
         }
       ],
-      "icon": "BulletSpeed"
+      "icon": "BulletSpeed",
+      "setId": "alpha"
     },
     {
       "id": "fleet-foot",
@@ -187,7 +196,8 @@
           "value": 1.2
         }
       ],
-      "icon": "MoveSpeed"
+      "icon": "MoveSpeed",
+      "setId": "alpha"
     },
     {
       "id": "buckshot",
@@ -224,7 +234,8 @@
           "value": 1
         }
       ],
-      "icon": "ProjectileCount"
+      "icon": "ProjectileCount",
+      "setId": "alpha"
     },
     {
       "id": "huge",
@@ -251,7 +262,8 @@
           "value": 1.25
         }
       ],
-      "icon": "MaxHealth"
+      "icon": "MaxHealth",
+      "setId": "alpha"
     },
     {
       "id": "remote",
@@ -292,7 +304,8 @@
           "value": 0.5
         }
       ],
-      "icon": "RemoteControl"
+      "icon": "RemoteControl",
+      "setId": "alpha"
     },
     {
       "id": "drill-ammo",
@@ -319,7 +332,268 @@
           "value": 0.25
         }
       ],
-      "icon": "DrillDistance"
+      "icon": "DrillDistance",
+      "setId": "alpha"
+    },
+    {
+      "id": "bugtest-ammo-99",
+      "name": "99 AMMO",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set magazine capacity to 99",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Ammo",
+          "operation": "Override",
+          "value": 99
+        }
+      ],
+      "icon": "Ammo"
+    },
+    {
+      "id": "bugtest-fire-rate-1000",
+      "name": "FIRE RATE 1000",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set fire rate to 1000/s",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "FireRate",
+          "operation": "Override",
+          "value": 1000
+        }
+      ],
+      "icon": "FireRate"
+    },
+    {
+      "id": "bugtest-bounces-99",
+      "name": "99 BOUNCES",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set bullet bounces to 99",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletBounces",
+          "operation": "Override",
+          "value": 99
+        }
+      ],
+      "icon": "BulletBounces"
+    },
+    {
+      "id": "bugtest-health-10000",
+      "name": "HP 10000",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set maximum HP to 10000",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Override",
+          "value": 10000
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "bugtest-damage-10000",
+      "name": "DAMAGE 10000",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set total shot damage to 10000",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Override",
+          "value": 10000
+        }
+      ],
+      "icon": "Damage"
+    },
+    {
+      "id": "bugtest-reload-01",
+      "name": "RELOAD 0.1s",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set reload time to 0.1s",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ReloadTime",
+          "operation": "Override",
+          "value": 0.1
+        }
+      ],
+      "icon": "ReloadTime"
+    },
+    {
+      "id": "bugtest-block-zero",
+      "name": "ZERO BLOCK COOLDOWN",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set block cooldown to 0s",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BlockCooldown",
+          "operation": "Override",
+          "value": 0
+        }
+      ],
+      "icon": "BlockCooldown"
+    },
+    {
+      "id": "bugtest-speed-10",
+      "name": "BULLET SPEED X10",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set bullet speed to 10x normal",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSpeed",
+          "operation": "Override",
+          "value": 10
+        }
+      ],
+      "icon": "BulletSpeed"
+    },
+    {
+      "id": "bugtest-size-8",
+      "name": "BULLET SIZE X8",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set bullet size to 8x normal",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSize",
+          "operation": "Override",
+          "value": 8
+        }
+      ],
+      "icon": "BulletSize"
+    },
+    {
+      "id": "bugtest-size-tiny",
+      "name": "BULLET SIZE X0.1",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set bullet size to 1/10 normal",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSize",
+          "operation": "Override",
+          "value": 0.1
+        }
+      ],
+      "icon": "BulletSize"
+    },
+    {
+      "id": "bugtest-pellets-32",
+      "name": "32 PELLETS",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "32 pellets per shot",
+          "kind": "new"
+        },
+        {
+          "text": "Random spread (0.6 radians)",
+          "kind": "drawback"
+        },
+        {
+          "text": "Total damage shared across pellets",
+          "kind": "new"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ProjectileCount",
+          "operation": "Override",
+          "value": 32
+        },
+        {
+          "stat": "Spread",
+          "operation": "Override",
+          "value": 0.6
+        },
+        {
+          "stat": "BuckshotStacks",
+          "operation": "Override",
+          "value": 1
+        }
+      ],
+      "icon": "ProjectileCount"
+    },
+    {
+      "id": "bugtest-ammo-million",
+      "name": "AMMO 1000000",
+      "setId": "bugtest",
+      "effects": [
+        {
+          "text": "Set magazine capacity to 1000000",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Ammo",
+          "operation": "Override",
+          "value": 1000000
+        }
+      ],
+      "icon": "Ammo"
+    }
+  ],
+  "sets": [
+    {
+      "id": "alpha",
+      "name": "ALPHA",
+      "description": "Original Alpha cards.",
+      "enabledByDefault": true
+    },
+    {
+      "id": "bugtest",
+      "name": "BUGTEST",
+      "description": "Extreme values for testing limits.",
+      "enabledByDefault": false
     }
   ]
 }

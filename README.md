@@ -70,3 +70,28 @@ It limits that card's reduction to one second without raising a cooldown another
 [cards.schema.json](cards.schema.json) describes the format. The game also validates unique IDs/names, supported stats/operations, finite numbers, required fields, and valid base player stats. An invalid catalog is rejected as a whole; the server keeps its last valid catalog. If GitHub is unavailable on first startup, the original 14 cards are available as a fallback. Check [catalog status](https://great-round.onrender.com/api/cards) for version, card count, and validation errors.
 
 [Card Builder](https://great-round.onrender.com/card-builder.html) only prepares a JSON file. Nothing is published until you commit it to GitHub.
+
+## Card sets and per-lobby exclusions
+
+Every card can specify `setId`; older entries default to `alpha`. Declare available sets in the root `sets` array using `id`, `name`, optional `description`, and optional `enabledByDefault` (default true). IDs must be unique. A card cannot refer to a missing set.
+
+Hosts choose sets from **Edit Match Settings -> CARD SETS**, or **CARDS** in the lobby. Inside each set, hosts can disable individual cards. Guests can view these choices. Choices apply to that lobby and its rematches, and cannot change during an active match. At least one card must remain available to start. Main-menu **CARDS** shows the default card pool before joining a lobby.
+
+### BUGTEST (off by default)
+
+| Card | Test value |
+| --- | --- |
+| 99 AMMO | Magazine capacity 99 |
+| AMMO 1000000 | Magazine capacity 1000000 |
+| FIRE RATE 1000 | FireRate 1000 shots/second |
+| 99 BOUNCES | 99 ricochets |
+| HP 10000 | 10000 max HP |
+| DAMAGE 10000 | 10000 total shot damage |
+| RELOAD 0.1s | 0.1 second reload |
+| ZERO BLOCK COOLDOWN | No cooldown between fresh block presses |
+| BULLET SPEED X10 | 10x normal bullet speed |
+| BULLET SIZE X8 | 8x normal bullet size |
+| BULLET SIZE X0.1 | 1/10 normal bullet size |
+| 32 PELLETS | 32 randomized pellets, total damage split across them |
+
+These cards **set** values using `Override`; they do not add 99 ammo or multiply the current fire rate by 1000. High fire rates schedule multiple shots per simulation tick, so FIRE RATE 1000 produces its requested cadence. The 99-ammo test uses an actual 99-round magazine. There are no fixed gameplay ceilings for ammo or pellet count; counts must fit the engine's numeric representation and practical performance depends on the host. Large magazines use numeric ammo indicators rather than drawing one dot per round. BUGTEST is excluded from new lobbies unless the host enables it.
