@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "bugtest-combined-1",
+  "version": "remote-split-1",
   "cards": [
     {
       "id": "heavy-metal",
@@ -267,7 +267,7 @@
     },
     {
       "id": "remote",
-      "name": "REMOTE",
+      "name": "REMOTE (ALPHA)",
       "effects": [
         {
           "text": "Mouse steering, no gravity",
@@ -305,7 +305,7 @@
         }
       ],
       "icon": "RemoteControl",
-      "setId": "vanilla"
+      "setId": "alpha"
     },
     {
       "id": "drill-ammo",
@@ -2885,13 +2885,60 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "vanilla-remote",
+      "name": "REMOTE",
+      "effects": [
+        {
+          "text": "Momentum steering: bullets orbit and settle onto the cursor",
+          "kind": "new"
+        },
+        {
+          "text": "-40% speed, -50% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "RemoteControl",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.5
+        },
+        {
+          "stat": "RemoteConvergence",
+          "operation": "Override",
+          "value": 1
+        }
+      ],
+      "icon": "RemoteControl",
+      "setId": "vanilla"
     }
   ],
   "sets": [
     {
       "id": "alpha",
       "name": "ALPHA",
-      "description": "10 original Great Round Alpha cards.",
+      "description": "11 original Great Round Alpha cards, including constant-speed Remote.",
       "enabledByDefault": true
     },
     {
@@ -2903,7 +2950,7 @@
     {
       "id": "vanilla",
       "name": "VANILLA",
-      "description": "All 67 vanilla reference cards, including the established Buckshot, Huge, Remote and Drill Ammo variants.",
+      "description": "All 67 vanilla reference cards, including a separate momentum-steered Remote.",
       "enabledByDefault": false
     }
   ]
