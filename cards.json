@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "alpha-vanilla-2",
+  "version": "alpha-vanilla-3",
   "cards": [
     {
       "id": "heavy-metal",
@@ -1102,6 +1102,680 @@
         }
       ],
       "icon": "Damage"
+    },
+    {
+      "id": "barrage",
+      "name": "BARRAGE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Fire 4 additional bullets together",
+          "kind": "new"
+        },
+        {
+          "text": "+5 ammo",
+          "kind": "bonus"
+        },
+        {
+          "text": "-70% damage per bullet",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ProjectileCount",
+          "operation": "Add",
+          "value": 4
+        },
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": 5
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.3
+        },
+        {
+          "stat": "Spread",
+          "operation": "Add",
+          "value": 0.13
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "ProjectileCount"
+    },
+    {
+      "id": "big-bullet",
+      "name": "BIG BULLET",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Larger bullets (+0.5m radius)",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSizeAdd",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "BulletSizeAdd"
+    },
+    {
+      "id": "burst",
+      "name": "BURST",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Fire 3 shots in a rapid sequence",
+          "kind": "new"
+        },
+        {
+          "text": "+3 ammo",
+          "kind": "bonus"
+        },
+        {
+          "text": "-40% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BurstCount",
+          "operation": "Add",
+          "value": 3
+        },
+        {
+          "stat": "BurstInterval",
+          "operation": "Add",
+          "value": 0.025
+        },
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": 3
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "Spread",
+          "operation": "Add",
+          "value": 0.04
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "BurstCount"
+    },
+    {
+      "id": "fast-forward",
+      "name": "FAST FORWARD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bullets follow their trajectory twice as fast",
+          "kind": "new"
+        },
+        {
+          "text": "-30% reload time",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ProjectileSimulationSpeed",
+          "operation": "Multiply",
+          "value": 2
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Multiply",
+          "value": 0.7
+        }
+      ],
+      "icon": "ProjectileSimulationSpeed"
+    },
+    {
+      "id": "grow",
+      "name": "GROW",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bullet damage grows during its first 40m of travel",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "GrowDamage",
+          "operation": "Add",
+          "value": 4
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "GrowDamage"
+    },
+    {
+      "id": "homing",
+      "name": "HOMING",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bullets home toward visible targets ahead",
+          "kind": "new"
+        },
+        {
+          "text": "-25% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+50% attack interval",
+          "kind": "drawback"
+        },
+        {
+          "text": "-30% bullet speed",
+          "kind": "drawback"
+        },
+        {
+          "text": "-50% bullet gravity",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Homing",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.75
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.6666666666666666
+        },
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "BulletGravityMultiplier",
+          "operation": "Multiply",
+          "value": 0.5
+        }
+      ],
+      "icon": "Homing"
+    },
+    {
+      "id": "leech",
+      "name": "LEECH",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Heal for 75% of damage dealt",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "LifeSteal",
+          "operation": "Add",
+          "value": 0.75
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        }
+      ],
+      "icon": "LifeSteal"
+    },
+    {
+      "id": "refresh",
+      "name": "REFRESH",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Dealing over 10 damage refreshes block (0.5s trigger cooldown)",
+          "kind": "new"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "RefreshBlockOnDamage",
+          "operation": "Override",
+          "value": 1
+        }
+      ],
+      "icon": "RefreshBlockOnDamage"
+    },
+    {
+      "id": "spray",
+      "name": "SPRAY",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+1000% fire rate",
+          "kind": "bonus"
+        },
+        {
+          "text": "+12 ammo",
+          "kind": "bonus"
+        },
+        {
+          "text": "-75% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "More bullet spread",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 11
+        },
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": 12
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "Spread",
+          "operation": "Add",
+          "value": 0.1
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "FireRate"
+    },
+    {
+      "id": "tactical-reload",
+      "name": "TACTICAL RELOAD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking instantly refills your weapon",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ReloadOnBlock",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "ReloadOnBlock"
+    },
+    {
+      "id": "target-bounce",
+      "name": "TARGET BOUNCE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bounces pause briefly, then aim at a visible target",
+          "kind": "new"
+        },
+        {
+          "text": "+1 bullet bounce",
+          "kind": "bonus"
+        },
+        {
+          "text": "-20% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "TargetBounce",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "BulletBounces",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.8
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "TargetBounce"
+    },
+    {
+      "id": "trickster",
+      "name": "TRICKSTER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+80% bullet damage after every bounce",
+          "kind": "new"
+        },
+        {
+          "text": "+2 bullet bounces",
+          "kind": "bonus"
+        },
+        {
+          "text": "-20% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BounceDamageMultiplier",
+          "operation": "Multiply",
+          "value": 1.8
+        },
+        {
+          "stat": "BulletBounces",
+          "operation": "Add",
+          "value": 2
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.8
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        }
+      ],
+      "icon": "BounceDamageMultiplier"
+    },
+    {
+      "id": "cold-bullets",
+      "name": "COLD BULLETS",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Hits slow targets by 70%; slow wears off over time",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSlow",
+          "operation": "Add",
+          "value": 0.7
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "BulletSlow"
+    },
+    {
+      "id": "poison",
+      "name": "POISON",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bullet damage is dealt over 3 seconds",
+          "kind": "new"
+        },
+        {
+          "text": "+70% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "-30% reload time",
+          "kind": "bonus"
+        },
+        {
+          "text": "-1 ammo",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "DamageOverTime",
+          "operation": "Add",
+          "value": 3
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 1.7
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": -1
+        }
+      ],
+      "icon": "DamageOverTime",
+      "minimums": {
+        "Ammo": 1
+      }
+    },
+    {
+      "id": "parasite",
+      "name": "PARASITE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bullet damage is dealt over 5 seconds",
+          "kind": "new"
+        },
+        {
+          "text": "+50% life steal",
+          "kind": "new"
+        },
+        {
+          "text": "+25% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+25% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "DamageOverTime",
+          "operation": "Add",
+          "value": 5
+        },
+        {
+          "stat": "LifeSteal",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.25
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 1.25
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "DamageOverTime"
+    },
+    {
+      "id": "shields-up",
+      "name": "SHIELDS UP",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Firing your last round triggers a block",
+          "kind": "new"
+        },
+        {
+          "text": "Disables passive magazine refills",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.5s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BlockOnEmpty",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "DisablePassiveReload",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.5
+        }
+      ],
+      "icon": "BlockOnEmpty"
+    },
+    {
+      "id": "echo",
+      "name": "ECHO",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking triggers another block after 0.2 seconds",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "EchoBlocks",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        }
+      ],
+      "icon": "EchoBlocks"
     }
   ],
   "sets": [
@@ -1120,7 +1794,7 @@
     {
       "id": "vanilla",
       "name": "VANILLA",
-      "description": "First supported vanilla stat cards, imported from local ROUNDS references. More mechanics are being ported.",
+      "description": "Vanilla stat cards and supported projectile, damage and block abilities. More mechanics are being ported.",
       "enabledByDefault": false
     }
   ]

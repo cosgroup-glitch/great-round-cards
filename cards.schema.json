@@ -104,7 +104,24 @@
                     "BuckshotStacks",
                     "BounceSpeedMultiplier",
                     "ReloadOnDamage",
-                    "TerrainAvoidance"
+                    "TerrainAvoidance",
+                    "BulletGravityMultiplier",
+                    "ProjectileSimulationSpeed",
+                    "BulletSizeAdd",
+                    "BurstCount",
+                    "BurstInterval",
+                    "BounceDamageMultiplier",
+                    "GrowDamage",
+                    "Homing",
+                    "TargetBounce",
+                    "LifeSteal",
+                    "RefreshBlockOnDamage",
+                    "ReloadOnBlock",
+                    "BlockOnEmpty",
+                    "DisablePassiveReload",
+                    "EchoBlocks",
+                    "BulletSlow",
+                    "DamageOverTime"
                   ]
                 },
                 "operation": {
@@ -146,7 +163,24 @@
               "BuckshotStacks",
               "BounceSpeedMultiplier",
               "ReloadOnDamage",
-              "TerrainAvoidance"
+              "TerrainAvoidance",
+              "BulletGravityMultiplier",
+              "ProjectileSimulationSpeed",
+              "BulletSizeAdd",
+              "BurstCount",
+              "BurstInterval",
+              "BounceDamageMultiplier",
+              "GrowDamage",
+              "Homing",
+              "TargetBounce",
+              "LifeSteal",
+              "RefreshBlockOnDamage",
+              "ReloadOnBlock",
+              "BlockOnEmpty",
+              "DisablePassiveReload",
+              "EchoBlocks",
+              "BulletSlow",
+              "DamageOverTime"
             ]
           },
           "minimums": {
@@ -175,7 +209,24 @@
                 "BuckshotStacks",
                 "BounceSpeedMultiplier",
                 "ReloadOnDamage",
-                "TerrainAvoidance"
+                "TerrainAvoidance",
+                "BulletGravityMultiplier",
+                "ProjectileSimulationSpeed",
+                "BulletSizeAdd",
+                "BurstCount",
+                "BurstInterval",
+                "BounceDamageMultiplier",
+                "GrowDamage",
+                "Homing",
+                "TargetBounce",
+                "LifeSteal",
+                "RefreshBlockOnDamage",
+                "ReloadOnBlock",
+                "BlockOnEmpty",
+                "DisablePassiveReload",
+                "EchoBlocks",
+                "BulletSlow",
+                "DamageOverTime"
               ]
             },
             "additionalProperties": {

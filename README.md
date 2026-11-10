@@ -98,6 +98,14 @@ These cards **set** values using `Override`; they do not add 99 ammo or multiply
 
 ## VANILLA (off by default)
 
-The first 12 additional vanilla stat cards are available in this optional set. RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; cards needing new mechanics are not offered yet.
+29 additional vanilla cards are available in this optional set (12 stat cards and 17 projectile, damage, and block ability cards). RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; cards needing new mechanics are not offered yet.
 
 `BounceSpeedMultiplier` multiplies speed on each terrain bounce (default 1). `ReloadOnDamage` above zero instantly refills the shooter after positive damage to another player. `TerrainAvoidance` above zero steers bullets away from nearby terrain; it does not avoid players or movable props.
+
+### Additional ability stats
+
+Supported in engine version vanilla-abilities-v1: `BulletGravityMultiplier` (default 1), `ProjectileSimulationSpeed` (default 1; advances travel and gravity together), `BulletSizeAdd` (extra radius in world units), `BurstCount` (0 means one shot; 3 means three shots), `BurstInterval` (seconds, default internal interval 0.025 when unspecified), `BounceDamageMultiplier` (default 1), `GrowDamage` (growth strength during the first 40m), `Homing` (strength), `TargetBounce`, `LifeSteal` (fraction of actual damage healed), `RefreshBlockOnDamage`, `ReloadOnBlock`, `BlockOnEmpty`, `DisablePassiveReload`, `EchoBlocks` (extra blocks spaced by 0.2s), `BulletSlow` (decays by 0.3/s), and `DamageOverTime` (duration, independent 0.3s pulses). Ability flags turn on above zero. These mechanics are simulated by the server.
+
+REFRESH uses the reference card's accumulated-damage threshold over 10 and 0.5s trigger cooldown. Poison and Parasite replace direct bullet damage with timed damage. Self-hits and blocks never grant life steal or on-damage reload/refresh. Timed damage is cleared when a point ends. `DisablePassiveReload` disables idle partial-magazine refills; empty-magazine and manual reloads still work.
+
+Source discrepancies and engine adaptations are documented in the game's `docs/vanilla-card-audit.md`. In particular, BURST uses the source 0.6 damage multiplier (-40%), ECHO adds no block cooldown (matching the source modifier), and magazines preserve this game's one-round-per-volley behavior. No general ammo, fire-rate, projectile or damage caps were introduced.
