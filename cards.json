@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "alpha-vanilla-3",
+  "version": "alpha-vanilla-4",
   "cards": [
     {
       "id": "heavy-metal",
@@ -1776,6 +1776,493 @@
         }
       ],
       "icon": "EchoBlocks"
+    },
+    {
+      "id": "frost-slam",
+      "name": "FROST SLAM",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking strongly slows nearby targets",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "FrostSlam",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "FrostSlam"
+    },
+    {
+      "id": "healing-field",
+      "name": "HEALING FIELD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking creates a field that heals 55 HP after a 1.5s charge",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "HealingField",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "HealingField"
+    },
+    {
+      "id": "implode",
+      "name": "IMPLODE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking pulls nearby targets toward you",
+          "kind": "new"
+        },
+        {
+          "text": "+50% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Implode",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.5
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Implode"
+    },
+    {
+      "id": "shockwave",
+      "name": "SHOCKWAVE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking launches nearby targets away",
+          "kind": "new"
+        },
+        {
+          "text": "+50% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Shockwave",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.5
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Shockwave"
+    },
+    {
+      "id": "overpower",
+      "name": "OVERPOWER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking deals 15% of your max HP nearby after 0.5s",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Overpower",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Overpower"
+    },
+    {
+      "id": "silence",
+      "name": "SILENCE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking briefly disables nearby targets' shooting and block",
+          "kind": "new"
+        },
+        {
+          "text": "+25% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Silence",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.25
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Silence"
+    },
+    {
+      "id": "static-field",
+      "name": "STATIC FIELD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking creates a field that deals damage and slows",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "StaticField",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "StaticField"
+    },
+    {
+      "id": "supernova",
+      "name": "SUPERNOVA",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking pulls targets in, then bursts and stuns after 2.1s",
+          "kind": "new"
+        },
+        {
+          "text": "+50% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.5s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Supernova",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.5
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.5
+        }
+      ],
+      "icon": "Supernova"
+    },
+    {
+      "id": "saw",
+      "name": "SAW",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking creates a saw aura for 2s (60 damage per second)",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "SawField",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "SawField"
+    },
+    {
+      "id": "teleport",
+      "name": "TELEPORT",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking teleports you up to 6m toward your aim",
+          "kind": "new"
+        },
+        {
+          "text": "-30% block cooldown",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "TeleportDistance",
+          "operation": "Add",
+          "value": 6
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Multiply",
+          "value": 0.7
+        }
+      ],
+      "icon": "TeleportDistance"
+    },
+    {
+      "id": "chilling-presence",
+      "name": "CHILLING PRESENCE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Nearby visible enemies gradually become slowed",
+          "kind": "new"
+        },
+        {
+          "text": "+25% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ChillingPresence",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.25
+        }
+      ],
+      "icon": "ChillingPresence"
+    },
+    {
+      "id": "lifestealer",
+      "name": "LIFESTEALER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Drain 5 HP from a nearby enemy and heal 8 HP every 0.3s",
+          "kind": "new"
+        },
+        {
+          "text": "Drain cannot kill; range 4m",
+          "kind": "new"
+        },
+        {
+          "text": "+25% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "LifeDrainAura",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.25
+        }
+      ],
+      "icon": "LifeDrainAura"
+    },
+    {
+      "id": "chase",
+      "name": "CHASE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+60% movement speed when moving toward a visible enemy",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Chase",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        }
+      ],
+      "icon": "Chase"
+    },
+    {
+      "id": "taste-of-blood",
+      "name": "TASTE OF BLOOD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+50% movement and +25% jump for 3s after dealing damage",
+          "kind": "new"
+        },
+        {
+          "text": "+30% life steal",
+          "kind": "new"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "TasteOfBlood",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "LifeSteal",
+          "operation": "Add",
+          "value": 0.3
+        }
+      ],
+      "icon": "TasteOfBlood"
+    },
+    {
+      "id": "brawler",
+      "name": "BRAWLER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+200% current and max HP for 3s after dealing damage",
+          "kind": "new"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Brawler",
+          "operation": "Add",
+          "value": 1
+        }
+      ],
+      "icon": "Brawler"
     }
   ],
   "sets": [
@@ -1794,7 +2281,7 @@
     {
       "id": "vanilla",
       "name": "VANILLA",
-      "description": "Vanilla stat cards and supported projectile, damage and block abilities. More mechanics are being ported.",
+      "description": "Vanilla stat cards, projectile abilities, damage effects, block fields and auras. More mechanics are being ported.",
       "enabledByDefault": false
     }
   ]

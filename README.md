@@ -98,7 +98,7 @@ These cards **set** values using `Override`; they do not add 99 ammo or multiply
 
 ## VANILLA (off by default)
 
-29 additional vanilla cards are available in this optional set (12 stat cards and 17 projectile, damage, and block ability cards). RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; cards needing new mechanics are not offered yet.
+44 additional vanilla cards are available in this optional set (12 stat cards and 32 ability cards). RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; cards needing new mechanics are not offered yet.
 
 `BounceSpeedMultiplier` multiplies speed on each terrain bounce (default 1). `ReloadOnDamage` above zero instantly refills the shooter after positive damage to another player. `TerrainAvoidance` above zero steers bullets away from nearby terrain; it does not avoid players or movable props.
 
@@ -109,3 +109,7 @@ Supported in engine version vanilla-abilities-v1: `BulletGravityMultiplier` (def
 REFRESH uses the reference card's accumulated-damage threshold over 10 and 0.5s trigger cooldown. Poison and Parasite replace direct bullet damage with timed damage. Self-hits and blocks never grant life steal or on-damage reload/refresh. Timed damage is cleared when a point ends. `DisablePassiveReload` disables idle partial-magazine refills; empty-magazine and manual reloads still work.
 
 Source discrepancies and engine adaptations are documented in the game's `docs/vanilla-card-audit.md`. In particular, BURST uses the source 0.6 damage multiplier (-40%), ECHO adds no block cooldown (matching the source modifier), and magazines preserve this game's one-round-per-volley behavior. No general ammo, fire-rate, projectile or damage caps were introduced.
+
+### Block fields, passive auras and conditional buffs
+
+Additional supported stats: `FrostSlam`, `HealingField`, `Implode`, `Shockwave`, `Overpower`, `Silence`, `StaticField`, `Supernova`, `SawField`, `ChillingPresence`, `LifeDrainAura`, `Chase`, `TasteOfBlood`, `Brawler` (all stack counts, default 0), and `TeleportDistance` (world units per block, default 0). Each block-triggered field uses its own reference timing/radius. Echo and empty-magazine blocks activate them as well. Effects respect cover, blocking and friendly-fire rules; passive auras target visible opponents. Healing Field heals everyone inside after a charge. No new assets or game-code edits are needed to combine these supported mechanics in custom cards.

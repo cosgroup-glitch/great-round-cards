@@ -121,7 +121,22 @@
                     "DisablePassiveReload",
                     "EchoBlocks",
                     "BulletSlow",
-                    "DamageOverTime"
+                    "DamageOverTime",
+                    "FrostSlam",
+                    "HealingField",
+                    "Implode",
+                    "Shockwave",
+                    "Overpower",
+                    "Silence",
+                    "StaticField",
+                    "Supernova",
+                    "SawField",
+                    "TeleportDistance",
+                    "ChillingPresence",
+                    "LifeDrainAura",
+                    "Chase",
+                    "TasteOfBlood",
+                    "Brawler"
                   ]
                 },
                 "operation": {
@@ -180,7 +195,22 @@
               "DisablePassiveReload",
               "EchoBlocks",
               "BulletSlow",
-              "DamageOverTime"
+              "DamageOverTime",
+              "FrostSlam",
+              "HealingField",
+              "Implode",
+              "Shockwave",
+              "Overpower",
+              "Silence",
+              "StaticField",
+              "Supernova",
+              "SawField",
+              "TeleportDistance",
+              "ChillingPresence",
+              "LifeDrainAura",
+              "Chase",
+              "TasteOfBlood",
+              "Brawler"
             ]
           },
           "minimums": {
@@ -226,7 +256,22 @@
                 "DisablePassiveReload",
                 "EchoBlocks",
                 "BulletSlow",
-                "DamageOverTime"
+                "DamageOverTime",
+                "FrostSlam",
+                "HealingField",
+                "Implode",
+                "Shockwave",
+                "Overpower",
+                "Silence",
+                "StaticField",
+                "Supernova",
+                "SawField",
+                "TeleportDistance",
+                "ChillingPresence",
+                "LifeDrainAura",
+                "Chase",
+                "TasteOfBlood",
+                "Brawler"
               ]
             },
             "additionalProperties": {

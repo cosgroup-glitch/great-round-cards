@@ -85,7 +85,7 @@
     {
       "name": "BRAWLER",
       "sourceFile": "Brawler.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "+200% HP 3s after dealing DMG",
       "displayStats": []
     },
@@ -160,7 +160,7 @@
     {
       "name": "CHASE",
       "sourceFile": "Chase.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "+60% movement when moving towards the opponent",
       "displayStats": [
         {
@@ -172,7 +172,7 @@
     {
       "name": "CHILLING PRESENCE",
       "sourceFile": "ChillingPresence.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Slightly slow nearby enemies",
       "displayStats": [
         {
@@ -392,7 +392,7 @@
     {
       "name": "FROST SLAM",
       "sourceFile": "Frost slam.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Slows enemies around you when you block",
       "displayStats": [
         {
@@ -440,7 +440,7 @@
     {
       "name": "HEALING FIELD",
       "sourceFile": "Healing field.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking creates a healing field",
       "displayStats": [
         {
@@ -488,7 +488,7 @@
     {
       "name": "IMPLODE",
       "sourceFile": "Implode.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking pulls enemies towards you",
       "displayStats": [
         {
@@ -520,7 +520,7 @@
     {
       "name": "LIFESTEALER",
       "sourceFile": "Lifestealer.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "'Steal hp from your opponent when near '",
       "displayStats": [
         {
@@ -552,7 +552,7 @@
     {
       "name": "OVERPOWER",
       "sourceFile": "Overpower.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Deal 15% of your max HP to enemies around you when you block",
       "displayStats": [
         {
@@ -730,7 +730,7 @@
     {
       "name": "SAW",
       "sourceFile": "Saw.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking spawns a saw around you for a short while",
       "displayStats": [
         {
@@ -786,7 +786,7 @@
     {
       "name": "SHOCKWAVE",
       "sourceFile": "Shockwave.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking pushes enemies away",
       "displayStats": [
         {
@@ -802,7 +802,7 @@
     {
       "name": "SILENCE",
       "sourceFile": "Silence.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking silences enemies nearby",
       "displayStats": [
         {
@@ -854,7 +854,7 @@
     {
       "name": "STATIC FIELD",
       "sourceFile": "Static field.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking creates a field that slows and deals damage",
       "displayStats": [
         {
@@ -886,7 +886,7 @@
     {
       "name": "SUPERNOVA",
       "sourceFile": "Supernova.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Spawns a field that pulls enemies in and stuns after a while",
       "displayStats": [
         {
@@ -954,7 +954,7 @@
     {
       "name": "TASTE OF BLOOD",
       "sourceFile": "TasteOfBlood.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "+50% movement speed 3s after dealing DMG",
       "displayStats": [
         {
@@ -966,7 +966,7 @@
     {
       "name": "TELEPORT",
       "sourceFile": "Teleport.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-3",
       "description": "Blocking teleports you forward",
       "displayStats": [
         {
