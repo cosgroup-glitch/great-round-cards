@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "vanilla-complete-1",
+  "version": "vanilla-complete-2",
   "cards": [
     {
       "id": "heavy-metal",
@@ -235,7 +235,7 @@
         }
       ],
       "icon": "ProjectileCount",
-      "setId": "alpha"
+      "setId": "vanilla"
     },
     {
       "id": "huge",
@@ -263,7 +263,7 @@
         }
       ],
       "icon": "MaxHealth",
-      "setId": "alpha"
+      "setId": "vanilla"
     },
     {
       "id": "remote",
@@ -305,7 +305,7 @@
         }
       ],
       "icon": "RemoteControl",
-      "setId": "alpha"
+      "setId": "vanilla"
     },
     {
       "id": "drill-ammo",
@@ -333,7 +333,7 @@
         }
       ],
       "icon": "DrillDistance",
-      "setId": "alpha"
+      "setId": "vanilla"
     },
     {
       "id": "bugtest-ammo-99",
@@ -584,7 +584,7 @@
     {
       "id": "riccochet",
       "name": "RICCOCHET",
-      "setId": "alpha",
+      "setId": "vanilla",
       "effects": [
         {
           "text": "Bullets lose half their speed on each bounce",
@@ -630,7 +630,7 @@
     {
       "id": "scavenger",
       "name": "SCAVENGER",
-      "setId": "alpha",
+      "setId": "vanilla",
       "effects": [
         {
           "text": "Dealing damage reloads your weapon",
@@ -658,7 +658,7 @@
     {
       "id": "sneaky",
       "name": "SNEAKY",
-      "setId": "alpha",
+      "setId": "vanilla",
       "effects": [
         {
           "text": "Bullets avoid the ground",
@@ -2809,7 +2809,7 @@
     {
       "id": "alpha",
       "name": "ALPHA",
-      "description": "Original Alpha cards.",
+      "description": "10 original Great Round Alpha cards.",
       "enabledByDefault": true
     },
     {
@@ -2821,7 +2821,7 @@
     {
       "id": "vanilla",
       "name": "VANILLA",
-      "description": "60 additional vanilla cards with server-authoritative mechanics. Existing ALPHA variants complete the 67-card reference roster.",
+      "description": "All 67 vanilla reference cards, including the established Buckshot, Huge, Remote and Drill Ammo variants.",
       "enabledByDefault": false
     }
   ]

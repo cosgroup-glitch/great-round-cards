@@ -67,7 +67,7 @@ It limits that card's reduction to one second without raising a cooldown another
 
 ## Validation and fallback
 
-[cards.schema.json](cards.schema.json) describes the format. The game also validates unique IDs/names, supported stats/operations, finite numbers, required fields, and valid base player stats. An invalid catalog is rejected as a whole; the server keeps its last valid catalog. If GitHub is unavailable on first startup, the 17 built-in ALPHA cards are available as a fallback. Check [catalog status](https://great-round.onrender.com/api/cards) for version, card count, and validation errors.
+[cards.schema.json](cards.schema.json) describes the format. The game also validates unique IDs/names, supported stats/operations, finite numbers, required fields, and valid base player stats. An invalid catalog is rejected as a whole; the server keeps its last valid catalog. If GitHub is unavailable on first startup, the 17 built-in fallback cards are available as a fallback. Check [catalog status](https://great-round.onrender.com/api/cards) for version, card count, and validation errors.
 
 [Card Builder](https://great-round.onrender.com/card-builder.html) only prepares a JSON file. Nothing is published until you commit it to GitHub.
 
@@ -98,7 +98,7 @@ These cards **set** values using `Override`; they do not add 99 ammo or multiply
 
 ## VANILLA (off by default)
 
-60 additional vanilla cards are available in this optional set. Together with seven existing ALPHA counterparts, all 67 named original definitions are covered. RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; there are no remaining placeholder or unported definitions.
+All 67 named vanilla reference cards are in VANILLA, including BUCKSHOT, HUGE, REMOTE, DRILL AMMO, RICCOCHET, SCAVENGER and SNEAKY. ALPHA contains the 10 original Great Round cards. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; there are no remaining placeholder or unported definitions.
 
 `BounceSpeedMultiplier` multiplies speed on each terrain bounce (default 1). `ReloadOnDamage` above zero instantly refills the shooter after positive damage to another player. `TerrainAvoidance` above zero steers bullets away from nearby terrain; it does not avoid players or movable props.
 
