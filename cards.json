@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "vanilla-complete-2",
+  "version": "bugtest-combined-1",
   "cards": [
     {
       "id": "heavy-metal",
@@ -2803,6 +2803,88 @@
         }
       ],
       "icon": "ToxicCloud"
+    },
+    {
+      "id": "bugtest-combined",
+      "name": "BUGTEST",
+      "setId": "bugtest",
+      "icon": "ProjectileCount",
+      "effects": [
+        {
+          "text": "Set magazine capacity to 1000000",
+          "kind": "bonus"
+        },
+        {
+          "text": "Set fire rate to 1000/s",
+          "kind": "bonus"
+        },
+        {
+          "text": "Set reload time to 0.1s",
+          "kind": "bonus"
+        },
+        {
+          "text": "Set bullet bounces to 99",
+          "kind": "bonus"
+        },
+        {
+          "text": "Set maximum HP to 10000",
+          "kind": "bonus"
+        },
+        {
+          "text": "32 pellets per shot",
+          "kind": "new"
+        },
+        {
+          "text": "Random spread (0.6 radians)",
+          "kind": "drawback"
+        },
+        {
+          "text": "Total damage shared across pellets",
+          "kind": "new"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Ammo",
+          "operation": "Override",
+          "value": 1000000
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Override",
+          "value": 1000
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Override",
+          "value": 0.1
+        },
+        {
+          "stat": "BulletBounces",
+          "operation": "Override",
+          "value": 99
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Override",
+          "value": 10000
+        },
+        {
+          "stat": "ProjectileCount",
+          "operation": "Override",
+          "value": 32
+        },
+        {
+          "stat": "Spread",
+          "operation": "Override",
+          "value": 0.6
+        },
+        {
+          "stat": "BuckshotStacks",
+          "operation": "Override",
+          "value": 1
+        }
+      ]
     }
   ],
   "sets": [
