@@ -49,7 +49,7 @@ Modifiers run in their listed order. Cards stack in the order they were picked. 
 
 ### Supported stats
 
-`MaxHealth`, `MoveSpeed`, `JumpImpulse`, `Damage`, `FireRate`, `ReloadTime`, `Ammo`, `BulletSpeed`, `BulletLifetime`, `BulletBounces`, `BulletSize`, `Spread`, `Recoil`, `BlockCooldown`, `BlockDuration`, `BodySize`, `ProjectileCount`, `RemoteControl`, `DrillDistance`, `BuckshotStacks`.
+`MaxHealth`, `MoveSpeed`, `JumpImpulse`, `Damage`, `FireRate`, `ReloadTime`, `Ammo`, `BulletSpeed`, `BulletLifetime`, `BulletBounces`, `BulletSize`, `Spread`, `Recoil`, `BlockCooldown`, `BlockDuration`, `BodySize`, `ProjectileCount`, `RemoteControl`, `DrillDistance`, `BuckshotStacks`, `BounceSpeedMultiplier`, `ReloadOnDamage`, `TerrainAvoidance`.
 
 Movement, jump, bullet speed, bullet size, and body size use multipliers relative to their base. Time values use seconds. Fire rate is shots per second; spread is radians. Whole-number counts should use whole-number values. Remote control enables the existing mouse-steering/no-gravity mechanic when above zero. BuckshotStacks enables the existing randomized pellet mechanic; also set ProjectileCount/Spread as shown in the included Buckshot card.
 
@@ -67,7 +67,7 @@ It limits that card's reduction to one second without raising a cooldown another
 
 ## Validation and fallback
 
-[cards.schema.json](cards.schema.json) describes the format. The game also validates unique IDs/names, supported stats/operations, finite numbers, required fields, and valid base player stats. An invalid catalog is rejected as a whole; the server keeps its last valid catalog. If GitHub is unavailable on first startup, the original 14 cards are available as a fallback. Check [catalog status](https://great-round.onrender.com/api/cards) for version, card count, and validation errors.
+[cards.schema.json](cards.schema.json) describes the format. The game also validates unique IDs/names, supported stats/operations, finite numbers, required fields, and valid base player stats. An invalid catalog is rejected as a whole; the server keeps its last valid catalog. If GitHub is unavailable on first startup, the 17 built-in ALPHA cards are available as a fallback. Check [catalog status](https://great-round.onrender.com/api/cards) for version, card count, and validation errors.
 
 [Card Builder](https://great-round.onrender.com/card-builder.html) only prepares a JSON file. Nothing is published until you commit it to GitHub.
 
@@ -95,3 +95,9 @@ Hosts choose sets from **Edit Match Settings -> CARD SETS**, or **CARDS** in the
 | 32 PELLETS | 32 randomized pellets, total damage split across them |
 
 These cards **set** values using `Override`; they do not add 99 ammo or multiply the current fire rate by 1000. High fire rates schedule multiple shots per simulation tick, so FIRE RATE 1000 produces its requested cadence. The 99-ammo test uses an actual 99-round magazine. There are no fixed gameplay ceilings for ammo or pellet count; counts must fit the engine's numeric representation and practical performance depends on the host. Large magazines use numeric ammo indicators rather than drawing one dot per round. BUGTEST is excluded from new lobbies unless the host enables it.
+
+## VANILLA (off by default)
+
+The first 12 additional vanilla stat cards are available in this optional set. RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; cards needing new mechanics are not offered yet.
+
+`BounceSpeedMultiplier` multiplies speed on each terrain bounce (default 1). `ReloadOnDamage` above zero instantly refills the shooter after positive damage to another player. `TerrainAvoidance` above zero steers bullets away from nearby terrain; it does not avoid players or movable props.

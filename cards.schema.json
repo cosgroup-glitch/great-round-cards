@@ -101,7 +101,10 @@
                     "ProjectileCount",
                     "RemoteControl",
                     "DrillDistance",
-                    "BuckshotStacks"
+                    "BuckshotStacks",
+                    "BounceSpeedMultiplier",
+                    "ReloadOnDamage",
+                    "TerrainAvoidance"
                   ]
                 },
                 "operation": {
@@ -140,7 +143,10 @@
               "ProjectileCount",
               "RemoteControl",
               "DrillDistance",
-              "BuckshotStacks"
+              "BuckshotStacks",
+              "BounceSpeedMultiplier",
+              "ReloadOnDamage",
+              "TerrainAvoidance"
             ]
           },
           "minimums": {
@@ -166,7 +172,10 @@
                 "ProjectileCount",
                 "RemoteControl",
                 "DrillDistance",
-                "BuckshotStacks"
+                "BuckshotStacks",
+                "BounceSpeedMultiplier",
+                "ReloadOnDamage",
+                "TerrainAvoidance"
               ]
             },
             "additionalProperties": {

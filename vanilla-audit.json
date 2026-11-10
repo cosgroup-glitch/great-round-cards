@@ -1,0 +1,1067 @@
+{
+  "source": "Local ROUNDS reference Resources/0 cards; template without a card name excluded",
+  "count": 67,
+  "note": "This inventory is not an assertion that every prefab is currently enabled in every retail build. Existing ALPHA variants preserve current game balance. The remaining entries are research/porting tasks, not playable placeholder cards. Original attackSpeed is an interval multiplier, converted to inverse FireRate for imported cards. Requested Riccochet uses the explicit +25% FireRate requested by the user.",
+  "cards": [
+    {
+      "name": "ABYSSAL COUNTDOWN",
+      "sourceFile": "AbyssalCountdown.prefab",
+      "status": "requires-port",
+      "description": "Stand still to summon dark powers",
+      "displayStats": []
+    },
+    {
+      "name": "BARRAGE",
+      "sourceFile": "Barrage.prefab",
+      "status": "requires-port",
+      "description": "Fire many bullets at the same time",
+      "displayStats": [
+        {
+          "amount": "+4",
+          "stat": "Bullets"
+        },
+        {
+          "amount": "+5",
+          "stat": "Ammo"
+        },
+        {
+          "amount": "-70%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "BIG BULLET",
+      "sourceFile": "Big Bullet.prefab",
+      "status": "requires-port",
+      "description": "Bigger bullets",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "BOMBS AWAY",
+      "sourceFile": "BombsAway.prefab",
+      "status": "requires-port",
+      "description": "Spawn a bunch of small bombs around you when you block",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "BOUNCY",
+      "sourceFile": "Bouncy.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+2",
+          "stat": "Bullet bounces"
+        },
+        {
+          "amount": "+25%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "BRAWLER",
+      "sourceFile": "Brawler.prefab",
+      "status": "requires-port",
+      "description": "+200% HP 3s after dealing DMG",
+      "displayStats": []
+    },
+    {
+      "name": "BUCKSHOT",
+      "sourceFile": "Buckshot.prefab",
+      "status": "existing-alpha-variant",
+      "description": "Adds a shotgun vibe to your attack",
+      "displayStats": [
+        {
+          "amount": "+4 ",
+          "stat": "Bullets"
+        },
+        {
+          "amount": "+5",
+          "stat": "AMMO"
+        },
+        {
+          "amount": "-60%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "BURST",
+      "sourceFile": "Burst.prefab",
+      "status": "requires-port",
+      "description": "Multiple bullets are fired in a sequence",
+      "displayStats": [
+        {
+          "amount": "+2",
+          "stat": "Bullets"
+        },
+        {
+          "amount": "+3",
+          "stat": "AMMO"
+        },
+        {
+          "amount": "-60%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "CAREFUL PLANNING",
+      "sourceFile": "Careful planning.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+100%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "-150%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "CHASE",
+      "sourceFile": "Chase.prefab",
+      "status": "requires-port",
+      "description": "+60% movement when moving towards the opponent",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "Health"
+        }
+      ]
+    },
+    {
+      "name": "CHILLING PRESENCE",
+      "sourceFile": "ChillingPresence.prefab",
+      "status": "requires-port",
+      "description": "Slightly slow nearby enemies",
+      "displayStats": [
+        {
+          "amount": "+25%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "COLD BULLETS",
+      "sourceFile": "Cold bullets.prefab",
+      "status": "requires-port",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+70%",
+          "stat": "Bullet slow"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "COMBINE",
+      "sourceFile": "Combine.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+100%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "-2",
+          "stat": "AMMO"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "DAZZLE",
+      "sourceFile": "Dazzle.prefab",
+      "status": "requires-port",
+      "description": "Bullets stun the oponent multiple times",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "DECAY",
+      "sourceFile": "Decay.prefab",
+      "status": "requires-port",
+      "description": "Damage done to you is dealt over 4 seconds",
+      "displayStats": [
+        {
+          "amount": "+50%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "DEFENDER",
+      "sourceFile": "Defender.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "-30%",
+          "stat": "Block cooldown"
+        },
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "DEMONIC PACT",
+      "sourceFile": "Demonic pact.prefab",
+      "status": "requires-port",
+      "description": "Shooting costs 10HP\\nRemoves shooting cooldown",
+      "displayStats": [
+        {
+          "amount": "+9",
+          "stat": "Bullets"
+        },
+        {
+          "amount": "+2",
+          "stat": "Splash DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "DRILL AMMO",
+      "sourceFile": "DrillAmmo.prefab",
+      "status": "existing-alpha-variant",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+7m",
+          "stat": "Bullets drill through walls"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "ECHO",
+      "sourceFile": "Echo.prefab",
+      "status": "requires-port",
+      "description": "Blocking triggers another, delayed block",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "EMP",
+      "sourceFile": "EMP.prefab",
+      "status": "requires-port",
+      "description": "Blocking spawns a ring of slowing projectiles",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "EMPOWER",
+      "sourceFile": "Empower.prefab",
+      "status": "requires-port",
+      "description": "Blocking increases the damage and speed of your next shot.\\nThe shot also triggers any on block abilities where it lands.",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "EXPLOSIVE BULLET",
+      "sourceFile": "Explosive bullet.prefab",
+      "status": "requires-port",
+      "description": "Bullet explodes on impact",
+      "displayStats": [
+        {
+          "amount": "-100%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "FASTBALL",
+      "sourceFile": "Fast ball.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+250%",
+          "stat": "Bullet speed "
+        },
+        {
+          "amount": "-50%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "FAST FORWARD",
+      "sourceFile": "Fast forward.prefab",
+      "status": "requires-port",
+      "description": "Bullets keep the default trajectory",
+      "displayStats": [
+        {
+          "amount": "+100%",
+          "stat": "Projectile speed"
+        },
+        {
+          "amount": "+30%",
+          "stat": "Reload speed"
+        }
+      ]
+    },
+    {
+      "name": "FROST SLAM",
+      "sourceFile": "Frost slam.prefab",
+      "status": "requires-port",
+      "description": "Slows enemies around you when you block",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "GLASS CANNON",
+      "sourceFile": "Glasscannon.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+100%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "-100%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "GROW",
+      "sourceFile": "Grow.prefab",
+      "status": "requires-port",
+      "description": "Bullets gets more damage over time when travelling",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "HEALING FIELD",
+      "sourceFile": "Healing field.prefab",
+      "status": "requires-port",
+      "description": "Blocking creates a healing field",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "HOMING",
+      "sourceFile": "Homing.prefab",
+      "status": "requires-port",
+      "description": "Bullets home towards visible targets",
+      "displayStats": [
+        {
+          "amount": "-25%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "-50%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "HUGE",
+      "sourceFile": "HUGE.prefab",
+      "status": "existing-alpha-variant",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+80%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "IMPLODE",
+      "sourceFile": "Implode.prefab",
+      "status": "requires-port",
+      "description": "Blocking pulls enemies towards you",
+      "displayStats": [
+        {
+          "amount": "+50%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "LEECH",
+      "sourceFile": "Leach.prefab",
+      "status": "requires-port",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+75%",
+          "stat": "Life steal"
+        },
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "LIFESTEALER",
+      "sourceFile": "Lifestealer.prefab",
+      "status": "requires-port",
+      "description": "'Steal hp from your opponent when near '",
+      "displayStats": [
+        {
+          "amount": "+25%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "MAYHEM",
+      "sourceFile": "Mayhem.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+5",
+          "stat": "Bullet bounces"
+        },
+        {
+          "amount": "-15%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "OVERPOWER",
+      "sourceFile": "Overpower.prefab",
+      "status": "requires-port",
+      "description": "Deal 15% of your max HP to enemies around you when you block",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "PARASITE",
+      "sourceFile": "Parasite.prefab",
+      "status": "requires-port",
+      "description": "Bullets deal damage over 5 seconds",
+      "displayStats": [
+        {
+          "amount": "+50%",
+          "stat": "Life steal"
+        },
+        {
+          "amount": "+25%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+25%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "PHOENIX",
+      "sourceFile": "Phoenix.prefab",
+      "status": "requires-port",
+      "description": "Respawn once on death",
+      "displayStats": [
+        {
+          "amount": "-35%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "POISON",
+      "sourceFile": "Poison bullets.prefab",
+      "status": "requires-port",
+      "description": "Bullets deal damage over 3 seconds",
+      "displayStats": [
+        {
+          "amount": "+70%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+30%",
+          "stat": "Reload speed"
+        },
+        {
+          "amount": "-1",
+          "stat": "Bullet"
+        }
+      ]
+    },
+    {
+      "name": "PRISITNE PERSEVERENCE",
+      "sourceFile": "Pristine perseverence.prefab",
+      "status": "requires-port",
+      "description": "+400% HP when above 90% HP",
+      "displayStats": []
+    },
+    {
+      "name": "QUICK RELOAD",
+      "sourceFile": "Quick Reload.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "-70%",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "QUICK SHOT",
+      "sourceFile": "Quick Shot.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+150%",
+          "stat": "Bullet speed"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "RADAR SHOT",
+      "sourceFile": "RadarShot.prefab",
+      "status": "requires-port",
+      "description": "Blocking scans the area for enemies. You automatically shoot any enemy found.",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "RADIANCE",
+      "sourceFile": "Radiance.prefab",
+      "status": "requires-port",
+      "description": "Spawn damaging sun waves when reloading.\\nThe rate increases during the reload sequence.",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        }
+      ]
+    },
+    {
+      "name": "REFRESH",
+      "sourceFile": "Refresh.prefab",
+      "status": "requires-port",
+      "description": "You get block back when deal damage",
+      "displayStats": []
+    },
+    {
+      "name": "REMOTE",
+      "sourceFile": "Remote.prefab",
+      "status": "existing-alpha-variant",
+      "description": "Steer bullet with right stick / mouse",
+      "displayStats": [
+        {
+          "amount": "-40%",
+          "stat": "Bullet speed"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "RICCOCHET",
+      "sourceFile": "Riccochet.prefab",
+      "status": "new-alpha",
+      "description": "Bullets lose half of their speed when they bounce",
+      "displayStats": [
+        {
+          "amount": "+2",
+          "stat": "Bullet bounces"
+        },
+        {
+          "amount": "+25%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "SAW",
+      "sourceFile": "Saw.prefab",
+      "status": "requires-port",
+      "description": "Blocking spawns a saw around you for a short while",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "SCAVENGER",
+      "sourceFile": "Scavenger.prefab",
+      "status": "new-alpha",
+      "description": "Dealing damage reloads your weapon",
+      "displayStats": [
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "SHIELD CHARGE",
+      "sourceFile": "Shield Charge.prefab",
+      "status": "requires-port",
+      "description": "Blocking launches you forward and gives you a second automatic block upon ending the charge",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "SHIELDS UP",
+      "sourceFile": "Shields up.prefab",
+      "status": "requires-port",
+      "description": "Firing your last bullet triggers a block.\\nDisabled continuous reloading.",
+      "displayStats": [
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        },
+        {
+          "amount": "+0.5",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "SHOCKWAVE",
+      "sourceFile": "Shockwave.prefab",
+      "status": "requires-port",
+      "description": "Blocking pushes enemies away",
+      "displayStats": [
+        {
+          "amount": "+50%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "SILENCE",
+      "sourceFile": "Silence.prefab",
+      "status": "requires-port",
+      "description": "Blocking silences enemies nearby",
+      "displayStats": [
+        {
+          "amount": "+25%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "SNEAKY",
+      "sourceFile": "Sneaky bullets.prefab",
+      "status": "new-alpha",
+      "description": "Bullets avoid the ground",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "SPRAY",
+      "sourceFile": "SPRAY.prefab",
+      "status": "requires-port",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+1000%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+12",
+          "stat": "AMMO"
+        },
+        {
+          "amount": "-75%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "STATIC FIELD",
+      "sourceFile": "Static field.prefab",
+      "status": "requires-port",
+      "description": "Blocking creates a field that slows and deals damage",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "STEADY SHOT",
+      "sourceFile": "Steady shot.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+40%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+100%",
+          "stat": "Bullet speed"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "SUPERNOVA",
+      "sourceFile": "Supernova.prefab",
+      "status": "requires-port",
+      "description": "Spawns a field that pulls enemies in and stuns after a while",
+      "displayStats": [
+        {
+          "amount": "+50%",
+          "stat": "HP"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "TACTICAL RELOAD",
+      "sourceFile": "Tactical reload.prefab",
+      "status": "requires-port",
+      "description": "Blocking reloads your weapon\\n",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "TANK",
+      "sourceFile": "Tank.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+100%",
+          "stat": "HP"
+        },
+        {
+          "amount": "-25%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "TARGET BOUNCE",
+      "sourceFile": "TargetBounce.prefab",
+      "status": "requires-port",
+      "description": "Bullets aim for visible targets when bouncing",
+      "displayStats": [
+        {
+          "amount": "+1",
+          "stat": "Bullet bounce"
+        },
+        {
+          "amount": "-20%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "TASTE OF BLOOD",
+      "sourceFile": "TasteOfBlood.prefab",
+      "status": "requires-port",
+      "description": "+50% movement speed 3s after dealing DMG",
+      "displayStats": [
+        {
+          "amount": "+30%",
+          "stat": "Life steal"
+        }
+      ]
+    },
+    {
+      "name": "TELEPORT",
+      "sourceFile": "Teleport.prefab",
+      "status": "requires-port",
+      "description": "Blocking teleports you forward",
+      "displayStats": [
+        {
+          "amount": "-30%",
+          "stat": "Block cooldown"
+        }
+      ]
+    },
+    {
+      "name": "THRUSTER",
+      "sourceFile": "Thruster.prefab",
+      "status": "requires-port",
+      "description": "Bullets have thrusters that push targets",
+      "displayStats": [
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "TIMED DETONATION",
+      "sourceFile": "Timed detonation.prefab",
+      "status": "requires-port",
+      "description": "Bullets spawn bombs that explode after half a second",
+      "displayStats": [
+        {
+          "amount": "-15%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.25s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "TOXIC CLOUD",
+      "sourceFile": "Toxic cloud.prefab",
+      "status": "requires-port",
+      "description": "Bullets spawn a poison cloud on impact. \\nClouds deal damage and slow.",
+      "displayStats": [
+        {
+          "amount": "-20%",
+          "stat": "Attack Speed"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "TRICKSTER",
+      "sourceFile": "Trickster.prefab",
+      "status": "requires-port",
+      "description": "Bullets deal 80% more DMG per bounce",
+      "displayStats": [
+        {
+          "amount": "+2",
+          "stat": "Bullet bounces"
+        },
+        {
+          "amount": "-20%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    },
+    {
+      "name": "WIND UP",
+      "sourceFile": "Wind up.prefab",
+      "status": "vanilla-batch-1",
+      "description": "",
+      "displayStats": [
+        {
+          "amount": "+100%",
+          "stat": "Bullet speed"
+        },
+        {
+          "amount": "+60%",
+          "stat": "DMG"
+        },
+        {
+          "amount": "-100%",
+          "stat": "ATKSPD"
+        },
+        {
+          "amount": "+0.5s",
+          "stat": "Reload time"
+        }
+      ]
+    }
+  ]
+}

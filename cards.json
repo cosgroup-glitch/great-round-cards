@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "alpha-bugtest-1",
+  "version": "alpha-vanilla-2",
   "cards": [
     {
       "id": "heavy-metal",
@@ -580,6 +580,528 @@
         }
       ],
       "icon": "Ammo"
+    },
+    {
+      "id": "riccochet",
+      "name": "RICCOCHET",
+      "setId": "alpha",
+      "effects": [
+        {
+          "text": "Bullets lose half their speed on each bounce",
+          "kind": "drawback"
+        },
+        {
+          "text": "+2 bullet bounces",
+          "kind": "bonus"
+        },
+        {
+          "text": "+25% attack speed",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BounceSpeedMultiplier",
+          "operation": "Multiply",
+          "value": 0.5
+        },
+        {
+          "stat": "BulletBounces",
+          "operation": "Add",
+          "value": 2
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 1.25
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "BulletBounces"
+    },
+    {
+      "id": "scavenger",
+      "name": "SCAVENGER",
+      "setId": "alpha",
+      "effects": [
+        {
+          "text": "Dealing damage reloads your weapon",
+          "kind": "new"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ReloadOnDamage",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        }
+      ],
+      "icon": "Ammo"
+    },
+    {
+      "id": "sneaky",
+      "name": "SNEAKY",
+      "setId": "alpha",
+      "effects": [
+        {
+          "text": "Bullets avoid the ground",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "TerrainAvoidance",
+          "operation": "Override",
+          "value": 1
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "RemoteControl"
+    },
+    {
+      "id": "vanilla-bouncy",
+      "name": "BOUNCY",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+25% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+2 bullet bounces",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 1.25
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        },
+        {
+          "stat": "BulletBounces",
+          "operation": "Add",
+          "value": 2.0
+        }
+      ],
+      "icon": "Damage"
+    },
+    {
+      "id": "vanilla-careful-planning",
+      "name": "CAREFUL PLANNING",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+100% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+150% attack interval",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 2.0
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.4
+        }
+      ],
+      "icon": "Damage"
+    },
+    {
+      "id": "vanilla-combine",
+      "name": "COMBINE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+100% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "-2 ammo",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 2.0
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": -2.0
+        }
+      ],
+      "icon": "Damage",
+      "minimums": {
+        "Ammo": 1
+      }
+    },
+    {
+      "id": "vanilla-defender",
+      "name": "DEFENDER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+30% HP",
+          "kind": "bonus"
+        },
+        {
+          "text": "-30% block cooldown",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Multiply",
+          "value": 0.7
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "vanilla-fastball",
+      "name": "FASTBALL",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+250% bullet speed",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+50% attack interval",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 3.5
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.6666666666666666
+        }
+      ],
+      "icon": "BulletSpeed"
+    },
+    {
+      "id": "vanilla-glass-cannon",
+      "name": "GLASS CANNON",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "-50% HP",
+          "kind": "drawback"
+        },
+        {
+          "text": "+100% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 0.5
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 2.0
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "vanilla-mayhem",
+      "name": "MAYHEM",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "-15% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+5 bullet bounces",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.85
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "BulletBounces",
+          "operation": "Add",
+          "value": 5.0
+        }
+      ],
+      "icon": "Damage"
+    },
+    {
+      "id": "vanilla-quick-reload",
+      "name": "QUICK RELOAD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "-70% reload time",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ReloadTime",
+          "operation": "Multiply",
+          "value": 0.3
+        }
+      ],
+      "icon": "ReloadTime"
+    },
+    {
+      "id": "vanilla-quick-shot",
+      "name": "QUICK SHOT",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+150% bullet speed",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 2.5
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "BulletSpeed"
+    },
+    {
+      "id": "vanilla-steady-shot",
+      "name": "STEADY SHOT",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+40% HP",
+          "kind": "bonus"
+        },
+        {
+          "text": "+100% bullet speed",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.4
+        },
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 2.0
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "vanilla-tank",
+      "name": "TANK",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+100% HP",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+25% attack interval",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 2.0
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.8
+        }
+      ],
+      "icon": "MaxHealth"
+    },
+    {
+      "id": "vanilla-wind-up",
+      "name": "WIND UP",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+60% damage",
+          "kind": "bonus"
+        },
+        {
+          "text": "+100% bullet speed",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        },
+        {
+          "text": "+100% attack interval",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 1.6
+        },
+        {
+          "stat": "BulletSpeed",
+          "operation": "Multiply",
+          "value": 2.0
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.5
+        }
+      ],
+      "icon": "Damage"
     }
   ],
   "sets": [
@@ -593,6 +1115,12 @@
       "id": "bugtest",
       "name": "BUGTEST",
       "description": "Extreme values for testing limits.",
+      "enabledByDefault": false
+    },
+    {
+      "id": "vanilla",
+      "name": "VANILLA",
+      "description": "First supported vanilla stat cards, imported from local ROUNDS references. More mechanics are being ported.",
       "enabledByDefault": false
     }
   ]
