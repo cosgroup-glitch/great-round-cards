@@ -119,3 +119,14 @@ Additional supported stats: `FrostSlam`, `HealingField`, `Implode`, `Shockwave`,
 Additional supported stats: `AbyssalCountdown`, `BombsAway`, `Dazzle`, `DamageDelay` (seconds), `ShotHealthCost` (nonlethal HP cost per volley), `ImpactSplash` (damage), `Emp`, `Empower`, `ExplosiveBullet`, `Phoenix` (revive charges per point), `Pristine`, `RadarShot`, `Radiance`, `ShieldCharge`, `Thruster`, `TimedDetonation`, `ToxicCloud`. Other new stats are stack counts; default 0. Phoenix keeps the point alive while resurrection is pending. Decay and poison retain damage attribution for lifesteal. Explosions and thrusters affect movable props.
 
 Pristine's original misspelled prefab name is corrected for display. Some original text disagrees with the executable prefab values: Demonic Pact costs 5 HP per volley, not 10, and Toxic Cloud multiplies direct damage by 0.75. These differences and simulation adaptations are listed in the game repository's `docs/vanilla-card-audit.md`.
+
+
+## Rarity and Unique cards
+
+Cards accept `rarity`: `common`, `uncommon`, `rare`, or `mythic` (Mythic Rare), and `unique`: true/false. Omitted values default to common/non-Unique for older catalogs. Unique cards can be picked once per player per match, including equivalent copies in different custom sets. Other cards retain stacking.
+
+Rarity symbols: Common black/white circle; Uncommon silver triangle; Rare gold square; Mythic Rare red-orange pentagon. Unique adds a red-to-black outer gradient.
+
+New lobbies enable VANILLA and leave ALPHA and BUGTEST off. Vanilla rarity assignments use the local original-card references; BUGTEST entries are Mythic Rare. Random offers use per-card weights, default Common100, Uncommon60, Rare25, Mythic Rare8. Hosts tune these separately inside each set in CARDS. Zero excludes a rarity from random offers; enabled-card browsing ignores random weights. Unique ownership still applies in both modes.
+
+Users can build personal sets in CARDS > MY CUSTOM SETS, selecting existing cards and overriding rarity/Unique without editing this repository or changing the source card's stats. Hosts load their saved sets into a lobby and enable them in CARDS. Sets and complete match presets are saved per browser and can be exported/imported as JSON.
