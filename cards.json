@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "version": "alpha-vanilla-4",
+  "version": "vanilla-complete-1",
   "cards": [
     {
       "id": "heavy-metal",
@@ -2263,6 +2263,546 @@
         }
       ],
       "icon": "Brawler"
+    },
+    {
+      "id": "abyssal-countdown",
+      "name": "ABYSSAL COUNTDOWN",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Stand still for 7s to enter dark form for 5s",
+          "kind": "new"
+        },
+        {
+          "text": "Dark form doubles HP, pulls targets in, and deals 90 damage/s nearby",
+          "kind": "new"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "AbyssalCountdown",
+          "operation": "Add",
+          "value": 1
+        }
+      ],
+      "icon": "AbyssalCountdown"
+    },
+    {
+      "id": "bombs-away",
+      "name": "BOMBS AWAY",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking jumps and launches 6 bombs around you",
+          "kind": "new"
+        },
+        {
+          "text": "Bombs explode after a 0.35s fuse",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "BombsAway",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "BombsAway"
+    },
+    {
+      "id": "dazzle",
+      "name": "DAZZLE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Hits repeatedly stun a target for 0.1s, every 0.35s for 2s",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Dazzle",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Dazzle"
+    },
+    {
+      "id": "decay",
+      "name": "DECAY",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Incoming damage is spread over 4s",
+          "kind": "new"
+        },
+        {
+          "text": "+50% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "DamageDelay",
+          "operation": "Add",
+          "value": 4
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.5
+        }
+      ],
+      "icon": "DamageDelay"
+    },
+    {
+      "id": "demonic-pact",
+      "name": "DEMONIC PACT",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+3900% fire rate",
+          "kind": "bonus"
+        },
+        {
+          "text": "+9 ammo",
+          "kind": "bonus"
+        },
+        {
+          "text": "+2 splash damage",
+          "kind": "new"
+        },
+        {
+          "text": "Each volley costs 5 HP (cannot kill you)",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ShotHealthCost",
+          "operation": "Add",
+          "value": 5
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 40
+        },
+        {
+          "stat": "Ammo",
+          "operation": "Add",
+          "value": 9
+        },
+        {
+          "stat": "ImpactSplash",
+          "operation": "Add",
+          "value": 2
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "ShotHealthCost"
+    },
+    {
+      "id": "emp",
+      "name": "EMP",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking fires a ring of 30 slowing projectiles",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Emp",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Emp"
+    },
+    {
+      "id": "empower",
+      "name": "EMPOWER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking makes your next bullet 50% stronger and faster",
+          "kind": "new"
+        },
+        {
+          "text": "Its first impact triggers your block abilities there",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Empower",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Empower"
+    },
+    {
+      "id": "explosive-bullet",
+      "name": "EXPLOSIVE BULLET",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Bullets explode on impact",
+          "kind": "new"
+        },
+        {
+          "text": "+100% attack interval",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ExplosiveBullet",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.5
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "ExplosiveBullet"
+    },
+    {
+      "id": "phoenix",
+      "name": "PHOENIX",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Resurrect once per point after 2.53s, at full HP with a block",
+          "kind": "new"
+        },
+        {
+          "text": "-35% health",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Phoenix",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 0.65
+        }
+      ],
+      "icon": "Phoenix"
+    },
+    {
+      "id": "pristine-perseverance",
+      "name": "PRISTINE PERSEVERANCE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "+400% current and max HP while at or above 90% HP",
+          "kind": "new"
+        },
+        {
+          "text": "Slightly smaller body while active",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Pristine",
+          "operation": "Add",
+          "value": 1
+        }
+      ],
+      "icon": "Pristine"
+    },
+    {
+      "id": "radar-shot",
+      "name": "RADAR SHOT",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking automatically shoots a visible target within 12m",
+          "kind": "new"
+        },
+        {
+          "text": "The automatic shot uses no ammo",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "RadarShot",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "RadarShot"
+    },
+    {
+      "id": "radiance",
+      "name": "RADIANCE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Reloading emits damaging sun waves; waves accelerate during reload",
+          "kind": "new"
+        },
+        {
+          "text": "+30% health",
+          "kind": "bonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Radiance",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "MaxHealth",
+          "operation": "Multiply",
+          "value": 1.3
+        }
+      ],
+      "icon": "Radiance"
+    },
+    {
+      "id": "shield-charge",
+      "name": "SHIELD CHARGE",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Blocking launches you forward, deals contact damage, then blocks again",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s block cooldown",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ShieldCharge",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "BlockCooldown",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "ShieldCharge"
+    },
+    {
+      "id": "thruster",
+      "name": "THRUSTER",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Hits attach thrusters that keep pushing players or movable props",
+          "kind": "new"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "Thruster",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "Thruster"
+    },
+    {
+      "id": "timed-detonation",
+      "name": "TIMED DETONATION",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Hits attach a bomb that explodes after 0.35s",
+          "kind": "new"
+        },
+        {
+          "text": "-15% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.25s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "TimedDetonation",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.85
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.25
+        }
+      ],
+      "icon": "TimedDetonation"
+    },
+    {
+      "id": "toxic-cloud",
+      "name": "TOXIC CLOUD",
+      "setId": "vanilla",
+      "effects": [
+        {
+          "text": "Hits leave a damaging, slowing poison cloud",
+          "kind": "new"
+        },
+        {
+          "text": "-25% damage",
+          "kind": "drawback"
+        },
+        {
+          "text": "+20% attack interval",
+          "kind": "drawback"
+        },
+        {
+          "text": "+0.5s reload time",
+          "kind": "drawback"
+        }
+      ],
+      "modifiers": [
+        {
+          "stat": "ToxicCloud",
+          "operation": "Add",
+          "value": 1
+        },
+        {
+          "stat": "Damage",
+          "operation": "Multiply",
+          "value": 0.75
+        },
+        {
+          "stat": "FireRate",
+          "operation": "Multiply",
+          "value": 0.8333333333333334
+        },
+        {
+          "stat": "ReloadTime",
+          "operation": "Add",
+          "value": 0.5
+        }
+      ],
+      "icon": "ToxicCloud"
     }
   ],
   "sets": [
@@ -2281,7 +2821,7 @@
     {
       "id": "vanilla",
       "name": "VANILLA",
-      "description": "Vanilla stat cards, projectile abilities, damage effects, block fields and auras. More mechanics are being ported.",
+      "description": "60 additional vanilla cards with server-authoritative mechanics. Existing ALPHA variants complete the 67-card reference roster.",
       "enabledByDefault": false
     }
   ]

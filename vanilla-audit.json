@@ -1,12 +1,12 @@
 {
   "source": "Local ROUNDS reference Resources/0 cards; template without a card name excluded",
   "count": 67,
-  "note": "This inventory is not an assertion that every prefab is currently enabled in every retail build. Existing ALPHA variants preserve current game balance. The remaining entries are research/porting tasks, not playable placeholder cards. Original attackSpeed is an interval multiplier, converted to inverse FireRate for imported cards. Requested Riccochet uses the explicit +25% FireRate requested by the user.",
+  "note": "All 67 named source definitions have playable counterparts: 60 cards in optional VANILLA, 3 requested cards in ALPHA, and 4 established ALPHA variants. Engine adaptations and source-description discrepancies are documented in the browser repository docs/vanilla-card-audit.md. No placeholder cards remain.",
   "cards": [
     {
       "name": "ABYSSAL COUNTDOWN",
       "sourceFile": "AbyssalCountdown.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Stand still to summon dark powers",
       "displayStats": []
     },
@@ -49,7 +49,7 @@
     {
       "name": "BOMBS AWAY",
       "sourceFile": "BombsAway.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Spawn a bunch of small bombs around you when you block",
       "displayStats": [
         {
@@ -220,7 +220,7 @@
     {
       "name": "DAZZLE",
       "sourceFile": "Dazzle.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Bullets stun the oponent multiple times",
       "displayStats": [
         {
@@ -232,7 +232,7 @@
     {
       "name": "DECAY",
       "sourceFile": "Decay.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Damage done to you is dealt over 4 seconds",
       "displayStats": [
         {
@@ -260,7 +260,7 @@
     {
       "name": "DEMONIC PACT",
       "sourceFile": "Demonic pact.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Shooting costs 10HP\\nRemoves shooting cooldown",
       "displayStats": [
         {
@@ -312,7 +312,7 @@
     {
       "name": "EMP",
       "sourceFile": "EMP.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Blocking spawns a ring of slowing projectiles",
       "displayStats": [
         {
@@ -328,7 +328,7 @@
     {
       "name": "EMPOWER",
       "sourceFile": "Empower.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Blocking increases the damage and speed of your next shot.\\nThe shot also triggers any on block abilities where it lands.",
       "displayStats": [
         {
@@ -340,7 +340,7 @@
     {
       "name": "EXPLOSIVE BULLET",
       "sourceFile": "Explosive bullet.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Bullet explodes on impact",
       "displayStats": [
         {
@@ -592,7 +592,7 @@
     {
       "name": "PHOENIX",
       "sourceFile": "Phoenix.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Respawn once on death",
       "displayStats": [
         {
@@ -624,9 +624,10 @@
     {
       "name": "PRISITNE PERSEVERENCE",
       "sourceFile": "Pristine perseverence.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "+400% HP when above 90% HP",
-      "displayStats": []
+      "displayStats": [],
+      "gameCardId": "pristine-perseverance"
     },
     {
       "name": "QUICK RELOAD",
@@ -659,7 +660,7 @@
     {
       "name": "RADAR SHOT",
       "sourceFile": "RadarShot.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Blocking scans the area for enemies. You automatically shoot any enemy found.",
       "displayStats": [
         {
@@ -675,7 +676,7 @@
     {
       "name": "RADIANCE",
       "sourceFile": "Radiance.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Spawn damaging sun waves when reloading.\\nThe rate increases during the reload sequence.",
       "displayStats": [
         {
@@ -758,7 +759,7 @@
     {
       "name": "SHIELD CHARGE",
       "sourceFile": "Shield Charge.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Blocking launches you forward and gives you a second automatic block upon ending the charge",
       "displayStats": [
         {
@@ -978,7 +979,7 @@
     {
       "name": "THRUSTER",
       "sourceFile": "Thruster.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Bullets have thrusters that push targets",
       "displayStats": [
         {
@@ -990,7 +991,7 @@
     {
       "name": "TIMED DETONATION",
       "sourceFile": "Timed detonation.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Bullets spawn bombs that explode after half a second",
       "displayStats": [
         {
@@ -1006,7 +1007,7 @@
     {
       "name": "TOXIC CLOUD",
       "sourceFile": "Toxic cloud.prefab",
-      "status": "requires-port",
+      "status": "vanilla-batch-4",
       "description": "Bullets spawn a poison cloud on impact. \\nClouds deal damage and slow.",
       "displayStats": [
         {

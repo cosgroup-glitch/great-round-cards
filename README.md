@@ -98,7 +98,7 @@ These cards **set** values using `Override`; they do not add 99 ammo or multiply
 
 ## VANILLA (off by default)
 
-44 additional vanilla cards are available in this optional set (12 stat cards and 32 ability cards). RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; cards needing new mechanics are not offered yet.
+60 additional vanilla cards are available in this optional set. Together with seven existing ALPHA counterparts, all 67 named original definitions are covered. RICCOCHET, SCAVENGER, and SNEAKY are in ALPHA. See [vanilla-audit.json](vanilla-audit.json) for all 67 named original cards and their implementation status; there are no remaining placeholder or unported definitions.
 
 `BounceSpeedMultiplier` multiplies speed on each terrain bounce (default 1). `ReloadOnDamage` above zero instantly refills the shooter after positive damage to another player. `TerrainAvoidance` above zero steers bullets away from nearby terrain; it does not avoid players or movable props.
 
@@ -113,3 +113,9 @@ Source discrepancies and engine adaptations are documented in the game's `docs/v
 ### Block fields, passive auras and conditional buffs
 
 Additional supported stats: `FrostSlam`, `HealingField`, `Implode`, `Shockwave`, `Overpower`, `Silence`, `StaticField`, `Supernova`, `SawField`, `ChillingPresence`, `LifeDrainAura`, `Chase`, `TasteOfBlood`, `Brawler` (all stack counts, default 0), and `TeleportDistance` (world units per block, default 0). Each block-triggered field uses its own reference timing/radius. Echo and empty-magazine blocks activate them as well. Effects respect cover, blocking and friendly-fire rules; passive auras target visible opponents. Healing Field heals everyone inside after a charge. No new assets or game-code edits are needed to combine these supported mechanics in custom cards.
+
+### Completed vanilla mechanics
+
+Additional supported stats: `AbyssalCountdown`, `BombsAway`, `Dazzle`, `DamageDelay` (seconds), `ShotHealthCost` (nonlethal HP cost per volley), `ImpactSplash` (damage), `Emp`, `Empower`, `ExplosiveBullet`, `Phoenix` (revive charges per point), `Pristine`, `RadarShot`, `Radiance`, `ShieldCharge`, `Thruster`, `TimedDetonation`, `ToxicCloud`. Other new stats are stack counts; default 0. Phoenix keeps the point alive while resurrection is pending. Decay and poison retain damage attribution for lifesteal. Explosions and thrusters affect movable props.
+
+Pristine's original misspelled prefab name is corrected for display. Some original text disagrees with the executable prefab values: Demonic Pact costs 5 HP per volley, not 10, and Toxic Cloud multiplies direct damage by 0.75. These differences and simulation adaptations are listed in the game repository's `docs/vanilla-card-audit.md`.

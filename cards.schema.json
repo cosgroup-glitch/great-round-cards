@@ -136,7 +136,24 @@
                     "LifeDrainAura",
                     "Chase",
                     "TasteOfBlood",
-                    "Brawler"
+                    "Brawler",
+                    "AbyssalCountdown",
+                    "BombsAway",
+                    "Dazzle",
+                    "DamageDelay",
+                    "ShotHealthCost",
+                    "ImpactSplash",
+                    "Emp",
+                    "Empower",
+                    "ExplosiveBullet",
+                    "Phoenix",
+                    "Pristine",
+                    "RadarShot",
+                    "Radiance",
+                    "ShieldCharge",
+                    "Thruster",
+                    "TimedDetonation",
+                    "ToxicCloud"
                   ]
                 },
                 "operation": {
@@ -210,7 +227,24 @@
               "LifeDrainAura",
               "Chase",
               "TasteOfBlood",
-              "Brawler"
+              "Brawler",
+              "AbyssalCountdown",
+              "BombsAway",
+              "Dazzle",
+              "DamageDelay",
+              "ShotHealthCost",
+              "ImpactSplash",
+              "Emp",
+              "Empower",
+              "ExplosiveBullet",
+              "Phoenix",
+              "Pristine",
+              "RadarShot",
+              "Radiance",
+              "ShieldCharge",
+              "Thruster",
+              "TimedDetonation",
+              "ToxicCloud"
             ]
           },
           "minimums": {
@@ -271,7 +305,24 @@
                 "LifeDrainAura",
                 "Chase",
                 "TasteOfBlood",
-                "Brawler"
+                "Brawler",
+                "AbyssalCountdown",
+                "BombsAway",
+                "Dazzle",
+                "DamageDelay",
+                "ShotHealthCost",
+                "ImpactSplash",
+                "Emp",
+                "Empower",
+                "ExplosiveBullet",
+                "Phoenix",
+                "Pristine",
+                "RadarShot",
+                "Radiance",
+                "ShieldCharge",
+                "Thruster",
+                "TimedDetonation",
+                "ToxicCloud"
               ]
             },
             "additionalProperties": {
